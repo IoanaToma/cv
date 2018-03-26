@@ -25,6 +25,7 @@ article {
   padding: 1.5em 1em;
   max-width: 800px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .personal {
