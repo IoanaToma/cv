@@ -84,6 +84,13 @@ h3 {
 }
 
 .entry {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.entry-education {
   font-weight: 300;
   font-size: 1.1em;
   margin-bottom: 0.2em;
