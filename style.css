@@ -13,10 +13,10 @@
 /* edward = #ABB7B7 */
 
 body {
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-family: "Muli" ,sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6em;
 
   color: #22313F;
 }
@@ -56,6 +56,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 1.7em;
   font-weight: 400;
@@ -63,36 +67,29 @@ h1 {
 
 h1, h2 {
   letter-spacing: 0.1em;
-  font-variant: small-caps;
   letter-spacing: 1px;
-}
-
-h3 a {
-  font-weight: 300;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 400;
   line-height: 2em;
-  height: 2em;
+  margin-bottom: 12px;
 }
 
 h3 {
   font-size: 1.0em;
-  font-weight: 400;
   padding-top: 0.2em;
 }
 
 .entry {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
 
 .entry-education {
-  font-weight: 300;
+  font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
@@ -117,7 +114,11 @@ ul {
   margin-left: 1.2em;
   margin-top: 0;
   padding: 0;
-  text-align: justify
+  text-align: justify;
+}
+
+ul li:not(:last-child), ul:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .columns {
@@ -202,13 +203,24 @@ ul {
 }
 
 .section {
-  border-bottom: 1px solid black
+  border-bottom: 1px solid #ddd;
 }
 
 .name > h5 {
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .name > h5 {
   margin-top: 0.5em;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
